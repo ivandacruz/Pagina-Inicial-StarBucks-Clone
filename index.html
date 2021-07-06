@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Página principal do StarBucks</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    	<section>
+    		<div class="circle"></div>
+    		<header>
+    			<a href="#" class="logo"><img src="img/logo.png"></a>
+    			<ul>
+    				<li><a href="#">Home</a></li>
+    				<li><a href="https://www.starbucks.com.br/menu-list">Menu</a></li>
+    				<li><a href="#">What's New</a></li>
+    				<li><a href="#">Contact</a></li>
+    			</ul>
+    		</header>
+    		<div class="content">
+    			<div class="textBox">
+    				<h2>Não é apenas café é <span>Starbucks&copy;</span></h2>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mollis magna. Maecenas vulputate scelerisque pretium. Nunc faucibus venenatis consequat. Mauris eget ex nec elit condimentum sodales sed vitae mi. Nunc pretium, turpis et pharetra consectetur, urna ligula aliquet massa, non fringilla est purus id nisl. Quisque elementum sapien interdum, feugiat neque vel, accumsan dolor. Donec facilisis sem ut enim sollicitudin facilisis. Phasellus quis erat viverra, luctus sem vel, dapibus risus. Etiam eget sapien condimentum, pretium orci non, interdum neque.</p>
+    				<a href="https://historias.starbucks.com/br/stories/2020/um-gesto-de-carinho/" target="_blank">Saiba mais</a>
+    				</div>
+    				<div class="imgBox">
+    					<img src="img/img1.png" class="starbucks">
+    				</div>
+    		</div>
+    		<ul class="thumb">
+    			<li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"></li>
+    			<li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"></li>
+    			<li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"></li>
+    		</ul>
+    		<ul class="sci">
+    			<li><a href="https://www.facebook.com/StarbucksBrasil/" target="_blank"><img src="img/facebook.png"></a></li>
+    			<li><a href="https://twitter.com/StarbucksBrasil" target="_blank"><img src="img/twitter.png"></a></li>
+    			<li><a href="https://www.instagram.com/starbucksbrasil/" target="_blank"><img src="img/instagram.png"></a></li>    			
+    		</ul>
+    	</section>
+        <script type="text/javascript">
+        	function imgSlider(anything){
+        		document.querySelector('.starbucks').src = anything;
+        	}
+        	function changeCircleColor(color){
+        		const circle = document.querySelector('.circle');
+        		circle.style.background = color;
+        	}
+        </script>
+    </body>
+</html>
